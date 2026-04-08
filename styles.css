@@ -1122,6 +1122,10 @@
       text-align: center;
     }
 
+    .metoda-step {
+        padding: 20px 20px;
+    }
+
     .hero::before { display: none; }
     .hero-desc, .hero-tags, .hero-buttons { justify-content: center; }
     .hero-desc { margin-left: auto; margin-right: auto; }
