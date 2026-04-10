@@ -1145,14 +1145,3 @@
     .footer-inner { flex-direction: column; text-align: center; }
     .footer-links { flex-wrap: wrap; justify-content: center; }
   }
-
-  /* DESKTOP */
-  @media (min-width: 961px) {
-    .hero-photo {
-      aspect-ratio: 1 / 1;
-    }
-
-    .hero-image-wrap {
-      align-self: flex-start;
-    }
-  }
