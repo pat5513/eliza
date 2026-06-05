@@ -722,7 +722,7 @@
     background: var(--bottle-dark);
     color: white;
     border-color: var(--bottle-dark);
-    transform: scale(1.03);
+    /* transform: scale(1.03); */
   }
 
   .oferta-card.featured:hover {
