@@ -2,11 +2,11 @@
 
   :root {
     --cream: #FDFBF7;
-    --sage-light: #EDF2EC;
-    --sage: #8FA889;
-    --sage-mid: #6B8F67;
-    --bottle: #2A4A34;
-    --bottle-dark: #1C3323;
+    --sage-light: #f5e9ec;
+    --sage: #F4CED7;
+    --sage-mid: #c99fa9;
+    --bottle: #E694A9;
+    --bottle-dark: #e08199;
     --charcoal: #2C3E50;
     --charcoal-light: #4A5568;
     --text-muted: #718096;
@@ -130,7 +130,7 @@
     right: -200px;
     width: 700px;
     height: 700px;
-    background: radial-gradient(circle, #d8e8d4 0%, transparent 65%);
+    background: radial-gradient(circle, #F4CED7 0%, transparent 65%);
     z-index: 0;
     pointer-events: none;
   }
@@ -447,14 +447,20 @@
   .diagnoza-icon {
     width: 44px;
     height: 44px;
-    background: #e8f0e6;
+    background: var(--sage);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    color: var(--bottle);
     font-size: 20px;
+  }
+
+  .diagnoza-icon img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    filter: brightness(0) invert(1);
   }
 
   .diagnoza-card h3 {
@@ -924,7 +930,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #c2d9bd, #8fa889);
+    background: linear-gradient(135deg, #F4CED7, #E694A9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1000,7 +1006,7 @@
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background: #e8f0e6;
+    background: #F4CED7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1018,7 +1024,7 @@
     font-size: 15px;
     color: var(--charcoal-light);
     line-height: 1.75;
-    background: #f8fbf7;
+    background: var(--cream);
   }
 
   .faq-a.open { display: block; }
