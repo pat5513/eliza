@@ -1142,7 +1142,8 @@
     .hero-desc, .hero-tags, .hero-buttons { justify-content: center; }
     .hero-desc { margin-left: auto; margin-right: auto; }
     .hero-image-wrap { order: -1; max-width: 360px; margin: 0 auto; }
-    /* .hero-stats { right: -10px; top: 10px; } */
+    .hero-stats { bottom: 16px; left: -14px; padding: 12px 16px; }
+    .hero-stats-num { font-size: 22px; }
     .hero-card { left: -10px; }
 
     .diagnoza-grid { grid-template-columns: 1fr; }
@@ -1153,6 +1154,8 @@
     .oferta-grid { grid-template-columns: 1fr; }
     .oferta-card.featured { transform: none; }
     .opinie-grid { grid-template-columns: 1fr; }
+    .omnie-accent { bottom: 16px; right: -14px; padding: 14px 18px; }
+    .omnie-accent-num { font-size: 28px; }
     .nav-links { display: none; }
     .footer-inner { flex-direction: column; text-align: center; }
     .footer-links { flex-wrap: wrap; justify-content: center; }
