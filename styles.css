@@ -62,10 +62,14 @@
     align-items: center;
     justify-content: center;
     color: white;
-    font-family: 'Lora', serif;
+    font-family: 'Damion', cursive;
     font-size: 16px;
-    font-weight: 600;
+    /* font-weight: 600; */
     letter-spacing: -0.5px;
+  }
+
+  .nav-logo-mark-letter {
+        transform: translateX(-2px);
   }
 
   .nav-logo-text {
@@ -1137,7 +1141,7 @@
     .hero-desc, .hero-tags, .hero-buttons { justify-content: center; }
     .hero-desc { margin-left: auto; margin-right: auto; }
     .hero-image-wrap { order: -1; max-width: 360px; margin: 0 auto; }
-    .hero-stats { right: -10px; top: 10px; }
+    /* .hero-stats { right: -10px; top: 10px; } */
     .hero-card { left: -10px; }
 
     .diagnoza-grid { grid-template-columns: 1fr; }
