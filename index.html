@@ -215,7 +215,7 @@
     </div>
 
     <div class="oferta-grid">
-      <!-- Konsultacja wstępna -->
+      <!-- Konsultacja kontrolna -->
       <div class="oferta-card">
         <div class="oferta-title">Konsultacja kontrolna</div>
         <div class="oferta-price">215 <span>zł</span></div>
@@ -530,19 +530,6 @@
     });
   });
 
-  function centerFeaturedOfferCard() {
-    const ofertaGrid = document.querySelector('.oferta-grid');
-    const featuredCard = document.querySelector('.oferta-card.featured');
-
-    if (!ofertaGrid || !featuredCard || window.innerWidth > 960) return;
-
-    const gridRect = ofertaGrid.getBoundingClientRect();
-    const cardRect = featuredCard.getBoundingClientRect();
-    const offset = cardRect.left - gridRect.left - (gridRect.width - cardRect.width) / 2;
-
-    ofertaGrid.scrollLeft += offset;
-  }
-
   // Nav scroll effect
   window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
@@ -552,9 +539,6 @@
       nav.style.boxShadow = 'none';
     }
   });
-
-  window.addEventListener('load', centerFeaturedOfferCard);
-  window.addEventListener('resize', centerFeaturedOfferCard);
 </script>
 
 </body>
