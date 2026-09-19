@@ -1183,7 +1183,31 @@
     .omnie-image-wrap { max-width: 380px; margin: 0 auto; }
     .metoda-steps { grid-template-columns: repeat(2, 1fr); }
     .metoda-steps::before { display: none; }
-    .oferta-grid { grid-template-columns: 1fr; }
+
+    .oferta-grid {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 16px;
+      padding: 8px 6px 12px;
+      scrollbar-width: none;
+      scroll-padding-inline: 12px;
+    }
+
+    .oferta-grid::-webkit-scrollbar {
+      display: none;
+    }
+
+    .oferta-card {
+      flex: 0 0 82%;
+      min-width: 82%;
+      max-width: 82%;
+      scroll-snap-align: center;
+      scroll-margin-inline: 12px;
+      box-sizing: border-box;
+    }
+
     .oferta-card.featured { transform: none; }
     .opinie-grid { grid-template-columns: 1fr; }
     .omnie-accent { bottom: 16px; right: -14px; padding: 14px 18px; }
