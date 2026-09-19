@@ -81,6 +81,10 @@
     letter-spacing: 0.02em;
   }
 
+  .nav-logo-break {
+    display: none;
+  }
+
   .nav-hamburger {
     display: none;
     flex-direction: column;
@@ -1196,6 +1200,9 @@
     .omnie-accent { bottom: 16px; right: -14px; padding: 14px 18px; }
     .omnie-accent-num { font-size: 28px; }
     .nav-hamburger { display: flex; }
+    .nav-logo-break {
+      display: block;
+    }
     .nav-links { 
       position: absolute;
       top: 70px;
